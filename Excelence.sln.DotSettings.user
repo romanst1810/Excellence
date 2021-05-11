@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1d87459b_002D00cf_002D4284_002D90a4_002Da4f82181c981/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AddAccountAsyncAsync_Test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::0DF172C3-C54F-4993-B084-8BBC3796BCD9::.NETCoreApp,Version=v3.1::Excellence.Tests_.BankAccountRepositoryTest.AddAccountAsyncAsync_Test&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::0DF172C3-C54F-4993-B084-8BBC3796BCD9::.NETCoreApp,Version=v3.1::Excellence.Tests_.BankAccountRepositoryTest.GetBranchesAsync_Test&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::0DF172C3-C54F-4993-B084-8BBC3796BCD9::.NETCoreApp,Version=v3.1::Excellence.Tests_.BankRepositoryTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
