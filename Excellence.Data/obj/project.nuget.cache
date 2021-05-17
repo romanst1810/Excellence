@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tfu0EsePacHySFet6shYr7bQqfeFHCwXqHLF67OMfY0w2SG/VBAXDtYmjJ0EJcZ+EZtCx+OYU/4xTIVZqam49w==",
+  "dgSpecHash": "1gaLC9Kc7rIg1edOEpfM0GwZg3tfig68V4kWot03UIyyLl8+ihvVELNsi6kfwub4oF1CehYfgk6VM5Rk0KUUdw==",
   "success": true,
-  "projectFilePath": "D:\\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\\28 Job Interview Works\\Excelence.Test\\Excellence.Data\\Excellence.Data.csproj",
+  "projectFilePath": "D:\\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\\28 Job Interview Works\\Excellence\\Excellence.Data\\Excellence.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ronan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ronan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

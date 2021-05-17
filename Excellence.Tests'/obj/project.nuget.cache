@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "klbg4MEfHHOzYThl8Sy9E2YoK9SL92vpEAUGjditzHAsoENI08IAnv9KlRcmCc4kQ4es3g+v5+Qy/vgV5TZ2WQ==",
+  "dgSpecHash": "SCmPVUqRyYh8Wsyv/NhkWrCVj4gYDCt+6fwHuEqbVS2GRMlyTYPh8Jw/v7I5pxeyTtWnsIew9h6ntc2x/wxvsA==",
   "success": true,
-  "projectFilePath": "D:\\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\\28 Job Interview Works\\Excelence.Test\\Excellence.Tests'\\Excellence.Tests'.csproj",
+  "projectFilePath": "D:\\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\\28 Job Interview Works\\Excellence\\Excellence.Tests'\\Excellence.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ronan\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\ronan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

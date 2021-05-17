@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellence.Core", "Excellen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellence.Data", "Excellence.Data\Excellence.Data.csproj", "{9C8C001E-B9EF-40B7-9038-C61191BD66BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellence.Tests'", "Excellence.Tests'\Excellence.Tests'.csproj", "{0DF172C3-C54F-4993-B084-8BBC3796BCD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellence.Tests", "Excellence.Tests'\Excellence.Tests.csproj", "{0DF172C3-C54F-4993-B084-8BBC3796BCD9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exellence.Api", "Exellence.Api\Exellence.Api.csproj", "{E803586B-0549-488B-BC2F-F3B43C8D2B30}"
 EndProject
