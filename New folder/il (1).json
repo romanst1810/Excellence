@@ -1,0 +1,101 @@
+[
+    {
+        "city": "Jerusalem", 
+        "lat": "31.7833", 
+        "lng": "35.2167", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Southern", 
+        "capital": "primary", 
+        "population": "919438", 
+        "population_proper": "919438"
+    }, 
+    {
+        "city": "Tel Aviv-Yafo", 
+        "lat": "32.0833", 
+        "lng": "34.8000", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Tel Aviv", 
+        "capital": "admin", 
+        "population": "451523", 
+        "population_proper": "451523"
+    }, 
+    {
+        "city": "Haifa", 
+        "lat": "32.8000", 
+        "lng": "34.9833", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Haifa", 
+        "capital": "admin", 
+        "population": "281087", 
+        "population_proper": "281087"
+    }, 
+    {
+        "city": "Beersheba", 
+        "lat": "31.2589", 
+        "lng": "34.7978", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Southern", 
+        "capital": "admin", 
+        "population": "209000", 
+        "population_proper": "209000"
+    }, 
+    {
+        "city": "Nazareth", 
+        "lat": "32.7021", 
+        "lng": "35.2978", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Northern", 
+        "capital": "admin", 
+        "population": "83400", 
+        "population_proper": "83400"
+    }, 
+    {
+        "city": "Ramla", 
+        "lat": "31.9318", 
+        "lng": "34.8736", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Central", 
+        "capital": "admin", 
+        "population": "75500", 
+        "population_proper": "75500"
+    }, 
+    {
+        "city": "Al Bu\u0163ay\u1e29ah", 
+        "lat": "32.9087", 
+        "lng": "35.6320", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Northern", 
+        "capital": "minor", 
+        "population": "", 
+        "population_proper": ""
+    }, 
+    {
+        "city": "Al Khushn\u012byah", 
+        "lat": "32.9994", 
+        "lng": "35.8108", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Northern", 
+        "capital": "minor", 
+        "population": "", 
+        "population_proper": ""
+    }, 
+    {
+        "city": "F\u012bq", 
+        "lat": "32.7793", 
+        "lng": "35.7003", 
+        "country": "Israel", 
+        "iso2": "IL", 
+        "admin_name": "Northern", 
+        "capital": "minor", 
+        "population": "", 
+        "population_proper": ""
+    }
+]

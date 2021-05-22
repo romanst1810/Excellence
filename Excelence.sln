@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellence.Data", "Excellen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellence.Tests", "Excellence.Tests'\Excellence.Tests.csproj", "{0DF172C3-C54F-4993-B084-8BBC3796BCD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exellence.Api", "Exellence.Api\Exellence.Api.csproj", "{E803586B-0549-488B-BC2F-F3B43C8D2B30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exellence.Api", "Exellence.Api\Exellence.Api.csproj", "{E803586B-0549-488B-BC2F-F3B43C8D2B30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excellence.BL", "Excellence.BusinessLayer\Excellence.BL.csproj", "{FA59CA04-087D-4464-8BC2-17F38E96ACEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellence.BL", "Excellence.BusinessLayer\Excellence.BL.csproj", "{FA59CA04-087D-4464-8BC2-17F38E96ACEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exellence.MVC", "Exellence.MVC\Exellence.MVC.csproj", "{359C0278-938D-4785-BC56-83253A3001F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FA59CA04-087D-4464-8BC2-17F38E96ACEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA59CA04-087D-4464-8BC2-17F38E96ACEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA59CA04-087D-4464-8BC2-17F38E96ACEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359C0278-938D-4785-BC56-83253A3001F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359C0278-938D-4785-BC56-83253A3001F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359C0278-938D-4785-BC56-83253A3001F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359C0278-938D-4785-BC56-83253A3001F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
