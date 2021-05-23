@@ -9,7 +9,8 @@ namespace Excellence.Core.Repository
     public interface IBankRepository
     {
         Task<IReadOnlyCollection<BankInfo>> GetBanksAsync();
-
         Task<IReadOnlyCollection<BankBranchesInfo>> GetBranchesAsync(int bankCode);
+        Task<IReadOnlyCollection<BankBranchesInfo>> GetAllBranchesAsync();
+        Task<IReadOnlyCollection<CitiesInfo>> GetCitiesAsync();
     }
 }

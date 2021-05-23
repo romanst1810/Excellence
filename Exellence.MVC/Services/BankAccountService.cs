@@ -32,6 +32,18 @@ namespace Exellence.MVC.Helpers
             return model.ToList();
         }
 
+        public async Task<List<CitiesInfo>> GetCitiesAsync()
+        {
+            var model = await _bankService.GetCitiesAsync();
+            return model.ToList();
+        }
+
+        public async Task<List<BankBranchesInfo>> GetAllBranchesAsync()
+        {
+            var branches = await _bankService.GetAllBranchesAsync();
+            return branches.ToList();
+        }
+
         public async Task<List<BankBranchesInfo>> GetBranchesAsync(int id)
         {
             var branches = await _bankService.GetBranchesAsync(id);
@@ -43,8 +55,12 @@ namespace Exellence.MVC.Helpers
             _accountService.CreateAsync(requestBankAccountInfo);
         }
 
-        public BankAccountViewModel GetIndexResponce()
+        public async Task<BankAccountViewModel> GetIndexResponce()
         {
+            var responce = new BankAccountViewModel();
+            responce.Cities = await GetCitiesAsync();
+            responce.Banks = await GetBanksAsync();
+            responce.Branches = await GetAllBranchesAsync();
             return new BankAccountViewModel();
         }
     } 

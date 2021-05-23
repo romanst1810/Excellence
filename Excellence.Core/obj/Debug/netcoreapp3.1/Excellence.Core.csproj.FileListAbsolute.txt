@@ -10,3 +10,15 @@ D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excelenc
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excelence.Test\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.dll
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excelence.Test\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.pdb
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excelence.Test\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.genruntimeconfig.cache
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\bin\Debug\netcoreapp3.1\Excellence.Core.deps.json
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\bin\Debug\netcoreapp3.1\Excellence.Core.runtimeconfig.json
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\bin\Debug\netcoreapp3.1\Excellence.Core.runtimeconfig.dev.json
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\bin\Debug\netcoreapp3.1\Excellence.Core.dll
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\bin\Debug\netcoreapp3.1\Excellence.Core.pdb
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.csprojAssemblyReference.cache
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.AssemblyInfoInputs.cache
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.AssemblyInfo.cs
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.csproj.CoreCompileInputs.cache
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.dll
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.pdb
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Core\obj\Debug\netcoreapp3.1\Excellence.Core.genruntimeconfig.cache

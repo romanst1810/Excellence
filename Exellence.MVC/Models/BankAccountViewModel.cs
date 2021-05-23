@@ -42,7 +42,7 @@ namespace Exellence.MVC.Models
         [RegularExpression("[0-9]{1,10}")]
         public int AccountNumber { get; set; }
 
-        public List<string> Cities { get; set; } = new List<string>();
+        public List<CitiesInfo> Cities { get; set; } = new List<CitiesInfo>();
         public List<BankInfo> Banks { get; set; } = new List<BankInfo>();
         public List<BankBranchesInfo> Branches { get; set; } = new List<BankBranchesInfo>();
     }

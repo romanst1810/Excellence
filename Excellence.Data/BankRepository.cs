@@ -27,12 +27,26 @@ namespace Excellence.Data
             return Task.FromResult((IReadOnlyCollection<BankInfo>) _data.Value.Banks);
         }
 
+        public Task<IReadOnlyCollection<BankBranchesInfo>> GetAllBranchesAsync()
+        {
+            var branches = _data.Value.BankBranches
+                .ToArray();
+            return Task.FromResult((IReadOnlyCollection<BankBranchesInfo>)branches);
+        }
+
         public Task<IReadOnlyCollection<BankBranchesInfo>> GetBranchesAsync(int bankCode)
         {
             var branches = _data.Value.BankBranches
                 .Where(x => x.BankCode == bankCode)
                 .ToArray();
             return Task.FromResult((IReadOnlyCollection<BankBranchesInfo>) branches);
+        }
+
+        public Task<IReadOnlyCollection<CitiesInfo>> GetCitiesAsync()
+        {
+            var cities = _data.Value.Cities
+               .ToArray();
+            return Task.FromResult((IReadOnlyCollection<CitiesInfo>)cities);
         }
     }
 }

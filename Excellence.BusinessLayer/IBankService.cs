@@ -11,7 +11,8 @@ namespace Excellence.BL
     public interface IBankService
     {
         Task<IReadOnlyCollection<BankInfo>> GetBanksAsync();
-
+        Task<IReadOnlyCollection<BankBranchesInfo>> GetAllBranchesAsync();
         Task<IReadOnlyCollection<BankBranchesInfo>> GetBranchesAsync(int bankCode);
+        Task<IReadOnlyCollection<CitiesInfo>> GetCitiesAsync();
     }
 }

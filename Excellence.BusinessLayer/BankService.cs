@@ -20,10 +20,19 @@ namespace Excellence.BL
         {
             return await _bankRepository.GetBanksAsync();
         }
+        public async Task<IReadOnlyCollection<BankBranchesInfo>> GetAllBranchesAsync()
+        {
+            return await _bankRepository.GetAllBranchesAsync();
+        }
 
         public async Task<IReadOnlyCollection<BankBranchesInfo>> GetBranchesAsync(int bankCode)
         {
             return await _bankRepository.GetBranchesAsync(bankCode);
+        }
+
+        public async Task<IReadOnlyCollection<CitiesInfo>> GetCitiesAsync()
+        {
+            return await _bankRepository.GetCitiesAsync();
         }
     }
 }
