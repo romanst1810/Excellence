@@ -8,13 +8,6 @@ using System.Threading.Tasks;
 
 namespace Exellence.MVC.Helpers
 {
-    public interface IBankAccountService
-    {
-        Task<List<BankInfo>> GetBanksAsync();
-        Task<List<BankBranchesInfo>> GetBranchesAsync(int id);
-        void CreateAccount(BankAccountInfo requestBankAccountInfo);
-    }
-
     public class BankAccountService : IBankAccountService
     {
         private IAccountService _accountService;
@@ -57,11 +50,13 @@ namespace Exellence.MVC.Helpers
 
         public async Task<BankAccountViewModel> GetIndexResponce()
         {
-            var responce = new BankAccountViewModel();
-            responce.Cities = await GetCitiesAsync();
-            responce.Banks = await GetBanksAsync();
-            responce.Branches = await GetAllBranchesAsync();
-            return new BankAccountViewModel();
+            var responce = new BankAccountViewModel
+            {
+                Cities = await GetCitiesAsync(),
+                Banks = await GetBanksAsync(),
+                Branches = await GetAllBranchesAsync()
+            };
+            return responce;
         }
     } 
 }

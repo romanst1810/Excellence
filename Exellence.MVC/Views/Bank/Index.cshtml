@@ -1,0 +1,77 @@
+﻿@model Excellence.Core.Domain.BankAccountInfo
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h1>Index</h1>
+
+<h4>BankAccountInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameLocal" class="control-label"></label>
+                <input asp-for="NameLocal" class="form-control" />
+                <span asp-validation-for="NameLocal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameEnglish" class="control-label"></label>
+                <input asp-for="NameEnglish" class="form-control" />
+                <span asp-validation-for="NameEnglish" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDay" class="control-label"></label>
+                <input asp-for="BirthDay" class="form-control" />
+                <span asp-validation-for="BirthDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SocialId" class="control-label"></label>
+                <input asp-for="SocialId" class="form-control" />
+                <span asp-validation-for="SocialId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CityCode" class="control-label"></label>
+                <input asp-for="CityCode" class="form-control" />
+                <span asp-validation-for="CityCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @*@Html.DropDownListFor(model => model.BankCode, new SelectList((IEnumerable<KeyValuePair<int, string>>)ViewBag.BaModel.Banks, "Code", "Description"), "--Select Bank--")*@
+                
+                <label asp-for="BankCode" class="control-label"></label>
+                <input asp-for="BankCode" class="form-control" />
+                <span asp-validation-for="BankCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BranchNumber" class="control-label"></label>
+                <input asp-for="BranchNumber" class="form-control" />
+                <span asp-validation-for="BranchNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountNumber" class="control-label"></label>
+                <input asp-for="AccountNumber" class="form-control" />
+                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

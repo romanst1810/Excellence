@@ -1,6 +1,7 @@
 using Excellence.BL;
 using Excellence.Core.Repository;
 using Excellence.Data;
+using Exellence.MVC.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,8 +29,10 @@ namespace Exellence.MVC
             services.AddControllersWithViews();
             services.AddTransient<IAccountService, AccountService>();
             services.AddTransient<IBankService, BankService>();
-            services.AddTransient<IBankRepository, BankRepository>();
-            services.AddTransient<IBankAccountRepository, BankAccountRepository>();
+            services.AddSingleton<IBankRepository, BankRepository>();
+            services.AddSingleton<IBankAccountRepository, BankAccountRepository>();
+            services.AddTransient<IBankAccountService, BankAccountService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +56,7 @@ namespace Exellence.MVC
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Bank}/{action=Index}/{id?}");
             });
         }
     }

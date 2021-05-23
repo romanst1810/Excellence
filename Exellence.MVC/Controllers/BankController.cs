@@ -1,5 +1,7 @@
 ﻿using Excellence.BL;
 using Excellence.Core.Domain;
+using Exellence.MVC.Helpers;
+using Exellence.MVC.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -11,108 +13,28 @@ namespace Exellence.MVC.Controllers
 {
     public class BankController : Controller
     {
-        private IAccountService _accountService;
-        private IBankService _bankService;
-
-        public BankController(IAccountService accountService, IBankService bankService)
+        private IBankAccountService _bankAccountService;
+        
+        public BankController(IBankAccountService bankAccountService)
         {
-            this._accountService = accountService;
-            this._bankService = bankService;
-        }
-        //// POST api/<BankAccountController>
-        //[HttpPost]
-        //public void Post([FromBody] BankAccountInfo requestBankAccountInfo)
-        //{
-        //    _accountService.CreateAsync(requestBankAccountInfo);
-        //}
-
-        //[HttpGet]
-        //public async Task<List<BankInfo>> GetBanksAsync()
-        //{
-        //    var model = await _bankService.GetBanksAsync();
-        //    return model.ToList();
-        //}
-
-        //[HttpGet("{id}")]
-        //public async Task<List<BankBranchesInfo>> GetBranchesAsync(int id)
-        //{
-        //    var branches = await _bankService.GetBranchesAsync(id);
-        //    return branches.ToList();
-        //}
-
-        //// GET: BankController
-        public ActionResult Index()
-        {
-            return View();
+            this._bankAccountService = bankAccountService;
         }
 
-        // GET: BankController/Details/5
-        public ActionResult Details(int id)
+        public async Task<IActionResult> Index()
         {
-            return View();
-        }
-
-        // GET: BankController/Create
-        public ActionResult Create()
-        {
-            return View();
+            BankAccountViewModel baModel = await _bankAccountService.GetIndexResponce();
+            ViewBag.BaModel = baModel;
+            BankAccountInfo viewModel = new BankAccountInfo();
+            return View(viewModel);
         }
 
         // POST: BankController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult Create(BankAccountInfo requestBankAccountInfo)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: BankController/Edit/5
-        public ActionResult Edit(int id)
-        {
+            _bankAccountService.CreateAccount(requestBankAccountInfo);
             return View();
-        }
-
-        // POST: BankController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: BankController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: BankController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        }  
     }
 }
