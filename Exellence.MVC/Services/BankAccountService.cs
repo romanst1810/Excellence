@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Exellence.MVC.Helpers
 {
@@ -50,12 +51,28 @@ namespace Exellence.MVC.Helpers
 
         public async Task<BankAccountViewModel> GetIndexResponce()
         {
-            var responce = new BankAccountViewModel
+            var responce = new BankAccountViewModel();
+            
+            var cities = await GetCitiesAsync();
+            foreach (var c in cities)
             {
-                Cities = await GetCitiesAsync(),
-                Banks = await GetBanksAsync(),
-                Branches = await GetAllBranchesAsync()
-            };
+                responce.Cities.Add(
+                    new SelectListItem { Value = c.Code.ToString(), Text = c.Description });
+            }
+
+            var banks = await GetBanksAsync();
+            foreach (var bank in banks)
+            {
+                responce.Banks.Add(
+                    new SelectListItem{Value = bank.Code.ToString(),Text = bank.Description});
+            }
+
+            var branches = await GetAllBranchesAsync();
+            foreach (var branch in branches)
+            {
+                responce.BankBranches.Add(
+                    new SelectListItem{Value = branch.BranchNumber.ToString(),Text = branch.BranchName});
+            }
             return responce;
         }
     } 

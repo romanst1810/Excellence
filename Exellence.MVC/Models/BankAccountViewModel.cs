@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Exellence.MVC.Models
 {
@@ -42,8 +43,8 @@ namespace Exellence.MVC.Models
         [RegularExpression("[0-9]{1,10}")]
         public int AccountNumber { get; set; }
 
-        public List<CitiesInfo> Cities { get; set; } = new List<CitiesInfo>();
-        public List<BankInfo> Banks { get; set; } = new List<BankInfo>();
-        public List<BankBranchesInfo> Branches { get; set; } = new List<BankBranchesInfo>();
+        public List<SelectListItem> Cities { get; set; } = new List<SelectListItem>();
+        public List<SelectListItem> Banks { get; set; } = new List<SelectListItem>();
+        public List<SelectListItem> BankBranches { get; } = new List<SelectListItem>();
     }
 }
