@@ -12,7 +12,7 @@ namespace Exellence.MVC.Models
     {
         [Required]
         [StringLength(20)]
-        [RegularExpression("[\u0590-\u05FF\uFB1D-\uFB4F]")]
+        [RegularExpression("[א-ת]+")]
         public string NameLocal { get; set; }
 
         [Required]
@@ -33,15 +33,15 @@ namespace Exellence.MVC.Models
         public string CityCode { get; set; }
 
         [Required]
-        public int BankCode { get; set; }
+        public string BankCode { get; set; }
 
         [Required]
-        public int BranchNumber { get; set; }
+        public string BranchNumber { get; set; }
 
         [Required]
         [StringLength(10)]
         [RegularExpression("[0-9]{1,10}")]
-        public int AccountNumber { get; set; }
+        public string AccountNumber { get; set; }
 
         public List<SelectListItem> Cities { get; set; } = new List<SelectListItem>();
         public List<SelectListItem> Banks { get; set; } = new List<SelectListItem>();

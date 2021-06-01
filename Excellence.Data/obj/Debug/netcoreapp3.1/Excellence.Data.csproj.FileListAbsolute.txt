@@ -21,7 +21,7 @@ D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellen
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Data\bin\Debug\netcoreapp3.1\Excellence.Data.pdb
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Data\bin\Debug\netcoreapp3.1\Excellence.Core.dll
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Data\bin\Debug\netcoreapp3.1\Excellence.Core.pdb
-D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Data\obj\Debug\netcoreapp3.1\Excellence.Data.csprojAssemblyReference.cache
+D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Data\obj\Debug\netcoreapp3.1\Excellence.Data.csproj.AssemblyReference.cache
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Data\obj\Debug\netcoreapp3.1\Excellence.Data.GeneratedMSBuildEditorConfig.editorconfig
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Data\obj\Debug\netcoreapp3.1\Excellence.Data.AssemblyInfoInputs.cache
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Excellence\Excellence.Data\obj\Debug\netcoreapp3.1\Excellence.Data.AssemblyInfo.cs

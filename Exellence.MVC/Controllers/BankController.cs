@@ -23,18 +23,14 @@ namespace Exellence.MVC.Controllers
         public async Task<IActionResult> Index()
         {
             BankAccountViewModel baModel = await _bankAccountService.GetIndexResponce();
-            ViewBag.BaModel = baModel;
-            BankAccountInfo viewModel = new BankAccountInfo();
-            return View(viewModel);
+            return View(baModel);
         }
 
-        // POST: BankController/Create
         [HttpPost]
-        //[ValidateAntiForgeryToken]
-        public ActionResult Create(BankAccountInfo requestBankAccountInfo)
+        public ActionResult Create(BankAccountViewModel requestBankAccountInfo)
         {
             _bankAccountService.CreateAccount(requestBankAccountInfo);
-            return View();
+            return View("Create","Bank");
         }  
     }
 }

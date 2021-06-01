@@ -44,9 +44,20 @@ namespace Exellence.MVC.Helpers
             return branches.ToList();
         }
 
-        public void CreateAccount(BankAccountInfo requestBankAccountInfo)
+        public void CreateAccount(BankAccountViewModel  requestBankAccountInfo)
         {
-            _accountService.CreateAsync(requestBankAccountInfo);
+            BankAccountInfo model = new BankAccountInfo
+            {
+                CityCode = requestBankAccountInfo.CityCode,
+                BranchNumber = Int32.Parse(requestBankAccountInfo.BranchNumber),
+                AccountNumber = Int32.Parse(requestBankAccountInfo.AccountNumber),
+                BankCode = Int32.Parse(requestBankAccountInfo.BankCode),
+                BirthDay = requestBankAccountInfo.BirthDay,
+                NameEnglish = requestBankAccountInfo.NameEnglish,
+                NameLocal = requestBankAccountInfo.NameLocal,
+                SocialId = requestBankAccountInfo.SocialId
+            };
+           _accountService.CreateAsync(model);
         }
 
         public async Task<BankAccountViewModel> GetIndexResponce()
