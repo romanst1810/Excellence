@@ -44,6 +44,12 @@ namespace Exellence.MVC.Helpers
             return branches.ToList();
         }
 
+        public async Task<List<BankAccountInfo>> GetAllAccountsAsync()
+        {
+            var items = await _accountService.GetAllAsync();
+            return items.ToList();
+        }
+
         public void CreateAccount(BankAccountViewModel  requestBankAccountInfo)
         {
             BankAccountInfo model = new BankAccountInfo

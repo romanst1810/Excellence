@@ -9,5 +9,6 @@ namespace Excellence.BL
     public interface IAccountService
     {
         Task CreateAsync(BankAccountInfo item);
+        Task<IReadOnlyCollection<BankAccountInfo>> GetAllAsync();
     }
 }

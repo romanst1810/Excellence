@@ -12,5 +12,6 @@ namespace Exellence.MVC.Helpers
         Task<List<BankBranchesInfo>> GetBranchesAsync(int id);
         void CreateAccount(BankAccountViewModel requestBankAccountInfo);
         Task<BankAccountViewModel> GetIndexResponce();
+        Task<List<BankAccountInfo>> GetAllAccountsAsync();
     }
 }

@@ -30,7 +30,13 @@ namespace Exellence.MVC.Controllers
         public ActionResult Create(BankAccountViewModel requestBankAccountInfo)
         {
             _bankAccountService.CreateAccount(requestBankAccountInfo);
-            return View("Create","Bank");
-        }  
+            return View("Create");
+        }
+
+        public async Task<IActionResult> Accounts()
+        {
+            List<BankAccountInfo> accountInfos = await _bankAccountService.GetAllAccountsAsync();
+            return View(accountInfos);
+        }
     }
 }

@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Excellence.Core.Domain.BankAccountInfo>
+
+@{
+    ViewData["Title"] = "Accounts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Accounts</h1>
+
+<p>
+    <a asp-action="Index">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameLocal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameEnglish)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SocialId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CityCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BankCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameLocal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameEnglish)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SocialId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CityCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BankCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountNumber)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

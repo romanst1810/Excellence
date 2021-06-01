@@ -20,5 +20,11 @@ namespace Excellence.BL
         {
             await _bankRepository.CreateAsync(item);
         }
+
+        public async Task<IReadOnlyCollection<BankAccountInfo>> GetAllAsync()
+        {
+            var result = await _bankRepository.FetchAsync();
+            return result;
+        }
     }
 }
